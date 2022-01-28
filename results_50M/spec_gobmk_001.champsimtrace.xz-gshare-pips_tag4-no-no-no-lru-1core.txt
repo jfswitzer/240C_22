@@ -1,0 +1,27 @@
+
+*** ChampSim Multicore Out-of-Order Simulator ***
+
+Warmup Instructions: 50000000
+Simulation Instructions: 50000000
+Number of CPUs: 1
+LLC sets: 2048
+LLC ways: 16
+Off-chip DRAM Size: 4096 MB Channels: 1 Width: 64-bit Data Rate: 3200 MT/s
+
+CPU 0 runs /home/jen/CompArch/ChampSim/spec_gobmk_001.champsimtrace.xz
+CPU 0 GSHARE branch predictor
+LHT KB: 111.25
+SCC KB: 1.38
+Total KB: 112.62
+Heartbeat CPU 0 instructions: 10000003 cycles: 3517510 heartbeat IPC: 2.84292 cumulative IPC: 2.84292 (Simulation time: 0 hr 0 min 13 sec) 
+Heartbeat CPU 0 instructions: 20000002 cycles: 7008420 heartbeat IPC: 2.86458 cumulative IPC: 2.85371 (Simulation time: 0 hr 0 min 26 sec) 
+Heartbeat CPU 0 instructions: 30000002 cycles: 10539652 heartbeat IPC: 2.83187 cumulative IPC: 2.84639 (Simulation time: 0 hr 0 min 38 sec) 
+Heartbeat CPU 0 instructions: 40000001 cycles: 14075005 heartbeat IPC: 2.82857 cumulative IPC: 2.84192 (Simulation time: 0 hr 0 min 50 sec) 
+Heartbeat CPU 0 instructions: 50000001 cycles: 17626198 heartbeat IPC: 2.81596 cumulative IPC: 2.83669 (Simulation time: 0 hr 1 min 3 sec) 
+
+Warmup complete CPU 0 instructions: 50000001 cycles: 17626198 (Simulation time: 0 hr 1 min 3 sec) 
+
+Heartbeat CPU 0 instructions: 60000000 cycles: 28479198 heartbeat IPC: 0.921404 cumulative IPC: 0.921404 (Simulation time: 0 hr 1 min 13 sec) 
+Heartbeat CPU 0 instructions: 70000002 cycles: 39077198 heartbeat IPC: 0.943574 cumulative IPC: 0.932357 (Simulation time: 0 hr 1 min 24 sec) 
+Cannot prefetch code line 0x0 !!!
+gshare-pips_tag4-no-no-no-lru-1core: src/ooo_cpu.cc:805: int O3_CPU::prefetch_code_line(uint64_t): Assertion `0' failed.
