@@ -1,5 +1,4 @@
 #!/bin/bash
-# NOTE : Quote it else use array to avoid problems #
 FILES=("spec_gobmk_002.champsimtrace.xz" "spec_gobmk_001.champsimtrace.xz" "server_027.champsimtrace.xz" "server_026.champsimtrace.xz")
 for f in ${FILES[@]};
 do
@@ -22,9 +21,17 @@ do
     ./run_champsim.sh gshare-pips_scout1-no-no-no-lru-1core 50 50 $f
     echo "[|||||||||____]"      
     ./run_champsim.sh gshare-pips_scout2-no-no-no-lru-1core 50 50 $f
-    echo "[||||||||||___]"      
+    echo "[||||||||||___]"
+    ./run_champsim.sh gshare-pips_scout3-no-no-no-lru-1core 50 50 $f
+    echo "[||||||||||___]"
+    ./run_champsim.sh gshare-pips_scout5-no-no-no-lru-1core 50 50 $f
+    echo "[|||||||||||__]"     
     ./run_champsim.sh gshare-pips_scout8-no-no-no-lru-1core 50 50 $f
-    echo "[|||||||||||__]"      
+    echo "[|||||||||||__]"
+    ./run_champsim.sh gshare-pips_tag2-no-no-no-lru-1core 50 50 $f
+    echo "[||||||||||||_]"              
+    ./run_champsim.sh gshare-pips_tag4-no-no-no-lru-1core 50 50 $f
+    echo "[||||||||||||_]"          
     ./run_champsim.sh gshare-pips_tag8-no-no-no-lru-1core 50 50 $f
     echo "[||||||||||||_]"      
     ./run_champsim.sh gshare-pips_tag12-no-no-no-lru-1core 50 50 $f
